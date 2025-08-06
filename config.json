@@ -4,6 +4,10 @@
   "input": "data",
   "output": "detection_output",
   "confidence": 0.5,
+  "files": [
+    "vehicle-license-plate-detection-barrier-0106.xml",
+    "vehicle-license-plate-detection-barrier-0106.bin"
+  ],
   "labels": {
     "0": "license plate"
   }
