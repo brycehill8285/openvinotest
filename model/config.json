@@ -1,0 +1,15 @@
+{
+  "name": "vehicle-license-plate-detection-barrier-0123",
+  "model": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.xml",
+  "weights": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.bin",
+  "labels": [
+    "vehicle",
+    "license-plate"
+  ],
+  "type": "object_detection",
+  "framework": "openvino",
+  "inputSize": [300, 300],
+  "mean": [0, 0, 0],
+  "scale": [1, 1, 1],
+  "modelFormat": "ir"
+}
