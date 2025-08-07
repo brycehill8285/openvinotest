@@ -1,18 +1,29 @@
-{
-  "model": {
+[
+  {
     "modelName": "vehicle-license-plate-detection-barrier-0123",
+    "framework": "openvino",
+    "modelFormat": "ir",
     "modelFile": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.xml",
     "weightsFile": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.bin",
-    "framework": "openvino",
-    "modelFormat": "ir"
-  },
-  "labels": [
-    "vehicle",
-    "license-plate"
-  ],
-  "type": "object_detection",
-  "input": {
-    "width": 300,
-    "height": 300
+    "type": "object_detection",
+    "labels": [
+      "vehicle",
+      "license-plate"
+    ],
+    "input": {
+      "width": 300,
+      "height": 300,
+      "layout": "NCHW",
+      "mean": [0, 0, 0],
+      "scale": [1, 1, 1]
+    },
+    "output": {
+      "boxes": "detection_out", 
+      "scores": "detection_out",
+      "labels": "detection_out"
+    },
+    "meta": {
+      "description": "OpenVINO vehicle + license plate detection (detection only, no OCR)"
+    }
   }
-}
+]
