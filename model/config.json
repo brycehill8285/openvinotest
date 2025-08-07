@@ -1,12 +1,13 @@
-[
-  {
-    "modelName": "vehicle-license-plate-detection-barrier-0123",
-    "framework": "openvino",
-    "modelFormat": "ir",
-    "modelFile": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.xml",
-    "weightsFile": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.bin",
-    "type": "object_detection",
-    "labels": ["vehicle", "license-plate"],
-    "input": { "width": 300, "height": 300, "layout": "NCHW" }
-  }
-]
+name: vehicle-license-plate-detection-barrier-0123
+description: OpenVINO IR model for vehicle + license plate detection
+framework: openvino
+model:
+  modelFile: https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.xml
+  weightsFile: https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.bin
+type: object_detection
+labels:
+  - vehicle
+  - license-plate
+input:
+  width: 300
+  height: 300
