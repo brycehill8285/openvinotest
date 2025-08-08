@@ -11,6 +11,9 @@
       "vehicle",
       "license-plate"
     ],
-    "inputSize": [300, 300]
+    "inputSize": [
+      300,
+      300
+    ]
   }
 ]
