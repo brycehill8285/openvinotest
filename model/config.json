@@ -1,14 +1,16 @@
-{
-  "name": "Vehicle License Plate Detector",
-  "type": "object-detection",
-  "framework": "openvino",
-  "model": {
-    "xml": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.xml",
-    "bin": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.bin"
-  },
-  "labels": [
-    "vehicle",
-    "license-plate"
-  ],
-  "inputSize": [300, 300]
-}
+[
+  {
+    "name": "Vehicle License Plate Detector",
+    "type": "object-detection",
+    "framework": "openvino",
+    "model": {
+      "xml": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.xml",
+      "bin": "https://raw.githubusercontent.com/brycehill8285/openvinotest/main/model/vehicle-license-plate-detection-barrier-0123.bin"
+    },
+    "labels": [
+      "vehicle",
+      "license-plate"
+    ],
+    "inputSize": [300, 300]
+  }
+]
